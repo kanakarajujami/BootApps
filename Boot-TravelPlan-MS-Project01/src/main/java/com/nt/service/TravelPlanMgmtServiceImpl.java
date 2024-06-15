@@ -9,11 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nt.config.AppConfigProperties;
+import com.nt.constants.TravelPlanConstants;
 import com.nt.entity.PlanCategory;
 import com.nt.entity.TravelPlan;
 import com.nt.repository.IPlanCategoryRepository;
 import com.nt.repository.ITravelPlanRepository;
-import com.ntconstants.TravelPlanConstants;
 @Service("travelPlanService")
 public class TravelPlanMgmtServiceImpl implements ITravelPlanMgmtService {
 	@Autowired

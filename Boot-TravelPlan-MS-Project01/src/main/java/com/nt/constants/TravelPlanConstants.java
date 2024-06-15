@@ -1,4 +1,4 @@
-package com.ntconstants;
+package com.nt.constants;
 
 public class TravelPlanConstants {
 	public static final  String SAVE_SUCCESS="save-success";
