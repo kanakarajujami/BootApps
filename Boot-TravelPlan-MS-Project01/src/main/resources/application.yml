@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Boot-TravelPlan-MS-Project01
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: raju
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+   port: 4041    
+plan:
+   module:
+      messages:
+         save-success: Travel Plan registered with id value
+         save-failure: Problem in saved TravelPlan
+         find-by-id-failure: TravelPlan id not found
+         update-success: TravelPlan update with id value
+         update-failure: TravelPlan not found to update
+         delete-success: TravelPlan deleted with id value
+         delete-failure: id not found to delete travelplan
+         status-change-success: Travelplan status updated with id value
+         status-change-failure: id not found to delete travelplan
