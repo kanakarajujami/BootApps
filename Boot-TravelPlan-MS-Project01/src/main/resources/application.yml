@@ -2,17 +2,17 @@ spring:
   application:
     name: Boot-TravelPlan-MS-Project01
   datasource:
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    password: raju
-    url: jdbc:oracle:thin:@localhost:1521:xe
-    username: system
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://mysqldb:3306/JrtpTravelPlanDatabase
+    username: root
   jpa:
-    database-platform: org.hibernate.dialect.OracleDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
 server:
-   port: 4041    
+   port: 4043    
 plan:
    module:
       messages:
